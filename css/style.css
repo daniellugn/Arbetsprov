@@ -1,0 +1,162 @@
+html, body, h1, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #3c58a6 url(gfx/bg.png) repeat-x;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header, div {
+    margin: 177px auto;
+    max-width: 750px;
+    position: relative;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+h1 {
+    margin: 177px 0;
+}
+    h1 a {
+        display: block;
+    }
+        h1 a img {
+            display: block;
+            height: 70px;
+            width: 263px;
+            margin: auto;
+        }
+
+input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: rgba(255, 255, 255, 0.5) url(gfx/search.svg) no-repeat 40px 50%/25px;
+    border: 0;
+    border-radius: 7px;
+    color: #b8c1cc;
+    font-size: 30px;
+    height: 109px;
+    margin: 0 5%;
+    outline: none;
+    text-indent: 100px;
+    width: 90%;
+}
+input:focus {
+    background-color : rgba(255, 255, 255, 0.6);
+    color: #fff;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #b8c1cc;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #b8c1cc;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #b8c1cc;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: #b8c1cc;
+}
+ 
+ul {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 23px;
+    left: 0.7%;
+    letter-spacing: 2px;
+    list-style: none;
+    margin: 0 5%;
+    position: absolute;
+    top: 111px;
+    width: 88.9%;
+}
+    ul li {
+        border: 1px solid #ccc;
+    }
+    ul li.highlight{
+        background: #f5e689;
+    }
+
+ol{
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px 0 0 0;
+    font-size: 23px;
+    letter-spacing: 2px;
+    list-style: none;
+    padding: 35px 0;
+}
+    ol li {
+        height: 108px
+        
+    }
+    ol li.selected {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    ol li span, time {
+        display: inline-block;
+        height: 100%;
+    }
+    ol li span.title {
+        float: left;
+        font-size: 24px;
+        line-height: 108px;
+        margin-left: 10%;
+        width: 33%;
+    }
+    ol li time {
+        float: left;
+        font-size: 16px;
+        line-height: 114px;
+        width: 33%;
+    }
+    ol li a.delete {
+        background: #783a51;
+        color: #fff;
+        display: block;
+        float: right;
+        font-size: 16px;
+        line-height: 128px;
+        height: 108px;
+        text-align: center;
+        text-decoration: none;
+        width: 108px;
+    }
+
+@media screen and (max-width: 670px) {
+    ol li span.title {
+        font-size: 14px;
+        margin-left: 5%;
+    }
+    ol li time {
+        font-size: 12px;
+        line-height: 110px;
+    }
+}    
+@media screen and (max-width: 500px) {
+    input {
+        font-size: 18px;
+    }
+    ol li span.title {
+        font-size: 12px;
+        margin-left: 5%;
+    }
+    ol li time {
+        font-size: 10px;
+        line-height: 109px;
+    }
+}
+@media screen and (max-width: 399px) {
+    ol li span.title {
+        width:50%;
+    }
+    ol li time {
+        display: none;
+    }
+}

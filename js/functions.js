@@ -23,7 +23,7 @@ function doSearch(query)
 
     SC.get(getUrl, getOptions).then(function(data){
 
-        var mainSection = document.getElementById('main');
+        var mainSection = document.getElementsByTagName('main')[0];
         var searchSuggested = document.getElementById("search-suggested");
 
         // remove previous search results if exists

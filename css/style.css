@@ -9,7 +9,7 @@ body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-header, div {
+header, main {
     margin: 177px auto;
     max-width: 750px;
     position: relative;
